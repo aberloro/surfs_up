@@ -8,7 +8,7 @@
 ### Deliverables
 ### Resources
  - Data Sources: hawaii.sqlite
- - Software: SQLite, SQL Alchemy, Visual Studio Code, Jupyter Notebook, Python 3.7
+ - Software: SQLite, SQL Alchemy, Visual Studio Code, Jupyter Notebook, Python 3.7, Flask
 
  ## Analysis
  ### Overview of Code
