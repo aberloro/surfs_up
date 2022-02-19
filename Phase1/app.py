@@ -1,5 +1,3 @@
-#9.5.1 set up database and flask
-
 #dependencies
 import datetime as dt
 import numpy as np
@@ -12,6 +10,8 @@ from sqlalchemy import create_engine, func
 
 from flask import Flask, jsonify
 
+#9.5.1 set up database and flask
+
 #SET UP DATABASE
 #access database
 engine = create_engine("sqlite:///hawaii.sqlite")
@@ -19,7 +19,7 @@ engine = create_engine("sqlite:///hawaii.sqlite")
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 
-#save references to each table
+#save references to each table/class
 Measurement = Base.classes.measurement
 Station = Base.classes.station
 
@@ -29,6 +29,12 @@ session = Session(engine)
 #SET UP FLASK
 #create a flask app instance
 app = Flask(__name__)
+
+#to run flask:
+#open anaconda powershell and type
+#"set FLASK_APP=app.py" and hit enter then type
+#"flask run" and hit enter
+#and use address provided to view page
 
 #create WELCOME route 
 @app.route("/")
@@ -70,7 +76,7 @@ def stations():
     #convert to a list
     stations = list(np.ravel(results))
     
-    #return as json
+    #return list as json
     return jsonify(stations=stations)
 
 #create temperature route and function
@@ -88,7 +94,7 @@ def temp_monthly():
     #unravel into list
     temps = list(np.ravel(results))
     
-    #convert to JSON
+    #convert list to JSON
     return jsonify(temps=temps)
 
 #create statistics route and function with start and end dates
@@ -107,7 +113,7 @@ def stats(start=None, end=None):
             filter(Measurement.date >= start).all()
         #unravel
         temps = list(np.ravel(results))
-        #convert to JSON
+        #convert list to JSON
         return jsonify(temps=temps)
     
     #calculate statistics with start and end dates
