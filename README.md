@@ -12,12 +12,12 @@ The purpose of this project is to expand upon Phase1 by digging deeper into the 
 
 ### Deliverables
   1. Determine Summary Statistics for June
-  2. Determine summary statistics for December
+  2. Determine Summary statistics for December
   3. Written README.md report of the statistical analysis
 
 ### Resources
  - Data Sources: hawaii.sqlite
- - Technology: SQLite, SQLAlchemy, VS Code, Jupyter Notebook 6.4, Python 3.7, Flask
+ - Technology: SQLite, SQLAlchemy, VS Code, Jupyter Notebook 6.4, Python 3.7
 
  ## Results
  Theree are three major differences in the June vs December temperature data:
@@ -25,7 +25,8 @@ The purpose of this project is to expand upon Phase1 by digging deeper into the 
    2. The minimum temperate in significantly lower in December: 56 degrees vs 64 in June.
    3. The maximum temperature is slightly lower in December: 83 degrees vs 85 in June.
 
-   ADD IMAGE Jun_Dec_Temp_stats
+   ![Jun_Dec_Temp_Stats](https://user-images.githubusercontent.com/93740725/154869183-5673da73-d0b0-4fce-89f0-1b3dac30ad9a.png)
+
 
  ## Summary
  ### Conclusions
@@ -38,4 +39,11 @@ It would be helpful for investors to see precipitation data for June and Decembe
   2. Expect an average of 0.22 inches and a max of 6.42 inches of rain in December. 
   3. Plots of average daily rain show that year over year amounts are relatively consistent, with the exception of an extremly wet season in June of 2011. 
 
-  ADD IMAGES
+June Precipitation Stats and Plot:
+
+![June_Precip](https://user-images.githubusercontent.com/93740725/154869217-4a3b4123-c19c-4aa6-95a0-c86403fe3a51.png)
+
+
+December Precipitation Stats and Plot:
+
+![December_Precip](https://user-images.githubusercontent.com/93740725/154869235-57443ba1-7469-4f3e-a792-c27be8e4794b.png)
