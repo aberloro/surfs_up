@@ -5,7 +5,7 @@
 
 ### Background
 
-A potential investor has asked for weather analysis prior to backing a proposed Surf N Shake Shop. Phase1 of this project showed the average precipitation per day was acceptable at the proposed location, and that most days of the year (325 of 365) had a favorable temperature of over 67 degrees F. 
+A potential investor has asked for weather analysis prior to backing a proposed Surf N Shake Shop. [Phase1](https://github.com/aberloro/surfs_up/blob/main/Phase1/climate_analysis.ipynb) of this project showed the average precipitation per day was acceptable at the proposed location, and that most days of the year (325 of 365) had a favorable temperature of over 67 degrees F. 
 
 ### Purpose
 The purpose of this project is to expand upon Phase1 by digging deeper into the temperature data of JUne and December in Oahu to see if the proposed business is sustanab;e year-round. 
